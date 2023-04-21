@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="fonts/style.css">
+   <title>Self 22</title>
+</head>
+<body>
+   <div class="cart">
+      <button class="cart__close"></button>
+      <p class="cart__title">Заказы</p>
+      <div class="cart__content">
+         <!-- <div class="cart__box">
+            <img src="img/shirt.png" alt="icon" class="cart__img">
+            <p class="cart__title1">Shirt 1</p>
+            <p class="cart__price1">$102.55</p>
+            <input type="number" value="1" class="cart__quantity">
+            <button class="cart__delete">del</button>
+         </div> -->
+      </div>
+      <div class="cart__total">
+         <p class="cart__totat_text">Total</p>
+         <p class="cart__price">₽0</p>
+      </div>
+      <button class="buy">Купить</button>
+   </div>
+   <div class="show1">
+      <div class="text001">Уже есть в корзине</div>
+      <div class="text002">закрыть</div>
+   </div>
+   <div class="show2">
+      <div class="text001">Заказ ушел</div>
+      <div class="text003">закрыть</div>
+   </div>
+   <div class="shadow"></div>
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <nav class="header__nav">
+               <ul class="header__list">
+                  <li class="header__item">
+                     <a href="#" class="header__link">Для мужчин</a>
+                     <ul class="header__list2">
+                        <li class="header__item2">Product</li>
+                        <li class="header__item2">Product</li>
+                        <li class="header__item2">Product</li>
+                     </ul>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Для женщин</a>
+                     <ul class="header__list2">
+                        <li class="header__item2">Product</li>
+                        <li class="header__item2">Product</li>
+                        <li class="header__item2">Product</li>
+                     </ul>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Для детей</a>
+                     <ul class="header__list2">
+                        <li class="header__item2">Product</li>
+                        <li class="header__item2">Product</li>
+                        <li class="header__item2">Product</li>
+                     </ul>
+                  </li>
+               </ul>
+               <a href="#" class="header__logo logo"><img src="img/logo.png" alt="logo"></a>
+               <div class="header__part2">
+                  <ul class="header__list3">
+                     <li class="header__item3">Оплата</li>
+                     <li class="header__item3">Доставка</li>
+                  </ul>
+                  <div class="header__basket">
+                     <i class="header__icon icon-basket"></i>
+                     <div class="header__count">
+                        <button class="count">0</button>
+                     </div>
+                  </div>
+                  <button class="header__burger"><span></span></button>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <main class="page">
+         <section class="home">
+            <div class="container">
+               <div class="home__body active">
+                  <div class="home__part1">
+                     <p class="home__subtitle">Зимняя распродажа 1</p>
+                     <h1 class="home__title">СКИДКИ ДО 90%</h1>
+                     <button class="page__btn btn">СМОТРЕТЬ МОДЕЛИ</button>
+                  </div>
+                  <div class="home__part2">
+                     <img src="img/img1.png" alt="icon" class="home__img">
+                     <div class="home__info">
+                        <p class="home__price1">9 900 ₽ </p>
+                        <p class="home__price2">1 900 ₽ </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="home__body">
+                  <div class="home__part1">
+                     <p class="home__subtitle">Зимняя распродажа 2</p>
+                     <h1 class="home__title">СКИДКИ ДО 90%</h1>
+                     <button class="page__btn btn">СМОТРЕТЬ МОДЕЛИ</button>
+                  </div>
+                  <div class="home__part2">
+                     <img src="img/img1.png" alt="icon" class="home__img">
+                     <div class="home__info">
+                        <p class="home__price1">9 900 ₽ </p>
+                        <p class="home__price2">1 900 ₽ </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="home__body">
+                  <div class="home__part1">
+                     <p class="home__subtitle">Зимняя распродажа 3</p>
+                     <h1 class="home__title">СКИДКИ ДО 90%</h1>
+                     <button class="page__btn btn">СМОТРЕТЬ МОДЕЛИ</button>
+                  </div>
+                  <div class="home__part2">
+                     <img src="img/img1.png" alt="icon" class="home__img">
+                     <div class="home__info">
+                        <p class="home__price1">9 900 ₽ </p>
+                        <p class="home__price2">1 900 ₽ </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="btn_sliders">
+               <span onclick="btn_slide(1)" class="span active"></span>
+               <span onclick="btn_slide(2)" class="span"></span>
+               <span onclick="btn_slide(3)" class="span"></span>
+            </div>
+         </section>
+         <section class="block_title">
+            <p class="block_title__subtitle">БЕСПЛАТНАЯ ДОСТАВКА <span>ОТ 3000₽</span></p>
+            <h2 class="block_title__title">Сделайте заказ и получите подарок!</h2>
+         </section>
+         <section class="catalog">
+            <div class="container">
+               <h3 class="catalog__title">Новые модели</h3>
+               <div class="catalog__items">
+                  <div class="catalog__item item1">
+                     <img src="img/shirt.png" alt="shirt" class="item1__img">
+                     <p class="item1__title">Футболкa поло 1</p>
+                     <p class="item1__price">₽4500</p>
+                     <button class="item1__btn">Добавить</button>
+                  </div>
+                  <div class="catalog__item item1">
+                     <img src="img/shirt.png" alt="shirt" class="item1__img">
+                     <p class="item1__title">Футболкa поло 2</p>
+                     <p class="item1__price">₽3000</p>
+                     <button class="item1__btn">Добавить</button>
+                  </div>
+                  <div class="catalog__item item1">
+                     <img src="img/shirt.png" alt="shirt" class="item1__img">
+                     <p class="item1__title">Футболкa поло 3</p>
+                     <p class="item1__price">₽2000</p>
+                     <button class="item1__btn">Добавить</button>
+                  </div>
+                  <div class="catalog__item item1">
+                     <img src="img/shirt.png" alt="shirt" class="item1__img">
+                     <p class="item1__title">Футболкa поло 4</p>
+                     <p class="item1__price">₽4000</p>
+                     <button class="item1__btn">Добавить</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__columns">
+               <div class="footer__column footer__column1">
+                  <a href="#" class="footer__logo logo"><img src="img/logo2.png" alt="logo"></a>
+                  <p class="footer__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, 
+                     at eleifend elit ornare ut.
+                  </p>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title">Основные ссылки</p>
+                  <div class="footer__block">
+                     <a href="#" class="footer__link">О компании</a>
+                     <a href="#" class="footer__link">Каталог</a>
+                     <a href="#" class="footer__link">Доставка</a>
+                     <a href="#" class="footer__link">Оплата</a>
+                  </div>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title">Категории</p>
+                  <div class="footer__block">
+                     <a href="#" class="footer__link">Мужская одежда</a>
+                     <a href="#" class="footer__link">Женская одежда</a>
+                     <a href="#" class="footer__link">Детская одежда</a>
+                     <a href="#" class="footer__link">Для животных</a>
+                  </div>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title">ПОЛЕЗНЫЕ ССЫЛКИ</p>
+                  <div class="footer__block">
+                     <a href="#" class="footer__link">Таблица размеров</a>
+                     <a href="#" class="footer__link">Блог о моде</a>
+                     <a href="#" class="footer__link">Наша миссия</a>
+                  </div>
+               </div>
+               <div class="footer__column">
+                  <p class="footer__title">СОЦ СЕТИ</p>
+                  <div class="footer__block">
+                     <a href="#" class="footer__soc"><i class="footer__icon icon-vk"></i> VK.com</a>
+                     <a href="#" class="footer__soc"><i class="footer__icon icon-faceb"></i> Facebook</a>
+                     <a href="#" class="footer__soc"><i class="footer__icon icon-insta"></i> Instagram</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="js/script.js"></script>
+   <script src="js/slide1.js"></script>
+   <script src="js/cartadd.js"></script>
+</body>
+</html>
