@@ -510,10 +510,37 @@ $color: #D7B399;
    @media(max-width: 500px) {
       width: 95%;
    }
+}
+.show1 {
    &.active {
       transform: translateX(-50%) scale(1);
       opacity: 1;
       z-index: 40;
+   }
+}
+@keyframes move {
+      0% {
+         transform: translateX(-50%) scale(1);
+         opacity: 1;
+         z-index: 40;
+      }
+      90% {
+         transform: translateX(-50%) scale(1);
+         opacity: 1;
+         z-index: 40;
+      }
+      100% {
+         transform: translateX(-50%) scale(0.1);
+         opacity: 0;
+         z-index: -1;
+      }
+}
+.show2 {
+   &.active {
+      animation-duration: 5s;
+      animation-name: move;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
    }
 }
 .text001 {
@@ -731,6 +758,10 @@ $color: #D7B399;
       @media(max-width: $wd3) {
          width: 95%;
       }
+      @media(max-width: 450px) {
+         padding: 60px 0 0 0;
+         grid-template-columns: repeat(1, 1fr);
+      }
    }
    &__part1 {
       justify-self: start;
@@ -826,6 +857,9 @@ $color: #D7B399;
    display: flex;
    align-items: center;
    justify-content: center;
+   @media(max-width: 450px) {
+      bottom: 20px;
+   }
    span {
       cursor: pointer;
       width: 40px;

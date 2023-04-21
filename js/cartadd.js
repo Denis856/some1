@@ -11,6 +11,7 @@ close.onclick = () => {
    document.querySelector('.cart').classList.remove('active');
    document.querySelector('.header').classList.remove('active');
    document.querySelector('body').classList.remove('active');
+   document.querySelector('.show2').classList.remove('active');
 };
 
 // next
